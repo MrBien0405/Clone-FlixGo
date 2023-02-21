@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.footer-container {
+  width: 100%;
+  background-color: #28282d;
+  .footer-wrap {
+    width: 80%;
+    margin: auto;
+    border-top: 2px solid #ff578a;
+    padding: 70px 0 30px;
+    .top-footer {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 80px;
+      .left-footer {
+        h4 {
+          margin-top: 20px;
+          color: #eeeef5;
+        }
+        .box-img-footer {
+          margin-top: 20px;
+
+          width: 150px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .center1-footer {
+      h4 {
+        margin-top: 20px;
+        color: #eeeef5;
+      }
+      ul {
+        display: contents;
+        list-style: none;
+        margin-top: 15px;
+        li {
+          margin-top: 10px;
+          color: #eeeef5;
+        }
+      }
+    }
+    .center2-footer {
+      h4 {
+        margin-top: 20px;
+        color: #eeeef5;
+      }
+      ul {
+        display: contents;
+
+        list-style: none;
+        margin-top: 15px;
+        li {
+          margin-top: 10px;
+          color: #eeeef5;
+        }
+      }
+    }
+    .right-footer {
+       margin-right: 50px;
+       
+      h4 {
+        margin-top: 20px;
+        color: #eeeef5;
+      }
+      ul {
+        display: contents;
+
+        list-style: none;
+        margin-top: 15px;
+        li {
+          margin-top: 10px;
+          color: #eeeef5;
+        }
+      }
+      .ul-icon-footer {
+        padding-left: 0;
+        display: flex;
+        gap: 10px;
+        li {
+          cursor: pointer;
+          font-size: 20px;
+        }
+      }
+      .ul-icon-footer li:hover {
+        color: #df525f;
+      }
+    }
+    .bottom-footer {
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid #353539;
+      padding-top: 20px;
+      p {
+        color: #eeeef5;
+      }
+      .text-bottom-footer{
+        a{
+        color: #eeeef5;
+            padding-left: 50px;
+            text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.footer-wrap {
+}

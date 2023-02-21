@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.expected-premiere-content-container {
+  width: 100%;
+  background-color: #252429;
+  padding-bottom: 60px;
+  .expected-premiere-content {
+    width: 80%;
+    margin: auto;
+
+    h2 {
+      padding-top: 50px;
+      color: #eeeef5;
+      font-weight: 300;
+    }
+    .wrap-expected-premiere {
+      display: flex;
+      .box-img-expected {
+        margin-top: 20px;
+        width: 40%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      h4 {
+        margin-top: 16px;
+        color: #eeeef5;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      p {
+        font-weight: 200;
+        color: #df525f;
+      }
+      ion-icon {
+        color: #df525f;
+      }
+      span {
+        color: #eeeef5;
+        font-weight: 600;
+        font-size: 18px;
+      }
+    }
+    .show-more-expected {
+      margin: auto;
+      width: 150px;
+      height: 50px;
+      border-radius: 5px;
+      background: linear-gradient(
+      90deg,
+      rgb(231, 10, 113) 0%,
+      rgb(236, 75, 142) 26%,
+      rgb(235, 43, 84) 81%
+    );
+      .text-show-more {
+        text-align: center;
+        line-height: 50px;
+        margin-bottom: 0;
+        color: #eeeef5;
+      }
+    }
+  }
+}

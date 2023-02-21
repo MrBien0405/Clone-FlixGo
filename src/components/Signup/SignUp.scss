@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .register-container-flixgo {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets//section.jpg);
+    .register-flixgo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      height: 520px;
+      border: 1px solid #28282d;
+      margin: auto;
+      background-color: #28282d;
+      border-top: 2px solid #ff5772;
+      .wrap-flixgo-container {
+        width: 80%;
+        margin: auto;
+        .box-img-flixgo {
+          width: 100%;
+          height: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            //   display: inline-block;
+            width: 50%;
+          }
+        }
+        .wrap-flixgo {
+          .input {
+            background-color: #2b2b31;
+            height: 50px;
+  
+            color: #fff;
+            font-size: 20px;
+            width: 100%;
+            border-radius: 4px;
+            margin-top: 20px;
+            padding: 0 20px;
+            outline: #ff5772;
+          }
+          .input:hover {
+            border: 1px solid #ff5772;
+          }
+          .label-remember {
+              margin-top: 20px;
+            color: #949496;
+            font-size: 1.5vw;
+            a{
+                text-decoration: none;
+                color: #ff5772;
+            }
+          }
+          .checkbox{
+              margin-right: 20px;
+              font-size: 45px;
+              color: #ff5772;
+          }
+          .btn-register{
+           margin-top: 20px;
+                button{
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 100%;
+                  height: 50px;
+                  border-radius: 5px;
+                  border: none;
+                  color: #eeeef5;
+                  font-weight: 600;
+                  background: linear-gradient(
+                      90deg,
+                      rgb(231, 10, 113) 0%,
+                      rgb(236, 75, 142) 26%,
+                      rgb(235, 43, 84) 81%
+                    );
+                }
+          }
+          p{
+              margin-top: 20px;
+              text-align: center;
+              color: #eeeef5;
+              a{
+                  text-decoration: none;
+                  color: #ff5772;
+              }
+          }
+        }
+      }
+    }
+  }
+  

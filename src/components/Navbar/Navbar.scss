@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  position: sticky;
+  z-index: 10;
+  width: 100%;
+  height: 80px;
+
+  background-color: #2b2b31;
+  .header_wrap {
+    
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    // line-height: 70px;
+    // align-items: center;
+    align-items: center;
+    .left-header {
+      width: 20%;
+      .boximgheader {
+        margin: auto;
+        height: 100%;
+        width: 100%;
+
+        img {
+          background-color: black;
+          height: 100%;
+          width: 100%;
+        }
+        img:hover {
+          background-color: #2b2b31;
+        }
+      }
+    }
+    .center-header ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-evenly;
+      color: #eeeef5;
+      font-weight: 500;
+      font-size: 16px;
+      li {
+        margin-right: 30px;
+        margin-left: 30px;
+        cursor: pointer;
+        a {
+          text-decoration: none;
+          color: #eeeef5;
+          align-items: center;
+        }
+      }
+    }
+    .right-header {
+      line-height: 80px;
+      justify-content: center;
+    }
+  }
+}
+.right-header ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: #eeeef5;
+      font-size: 16px;
+      font-weight: 700;
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+  .li-signin {
+    width: 130px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #df525f;
+    text-align: center;
+    line-height: 50px;
+    background: linear-gradient(
+      90deg,
+      rgb(231, 10, 113) 0%,
+      rgb(236, 75, 142) 26%,
+      rgb(235, 43, 84) 81%
+    );
+  }
+}
+.center-header ul li a:hover {
+  color: #df525f;
+}
+.right-header ul li a:hover {
+  color: #df525f;
+  transition: 0.8s;
+}
+.right-header ul .iconmenu {
+  font-size: 30px;
+  display: none;
+}
+@media screen and (max-width: 1115px) {
+  .header_wrap .menu-responsive ul {
+    background-color: white;
+    z-index: 10;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 70px;
+    // right: 0;
+    // left: 0;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #f3f3f3;
+    margin-top: 10px;
+
+    li {
+      z-index: 10;
+      margin: 0px;
+      width: 20%;
+      text-align: center;
+      cursor: pointer;
+      padding: 10px;
+      border: 1px solid black;
+      list-style: none;
+      float: right;
+      background-color: #2b2b31;
+      a {
+        text-decoration: none;
+        color: #eeeef5;
+      }
+    }
+  }
+
+  .center-header ul li {
+    display: none;
+  }
+  .right-header ul .iconmenu {
+    display: block;
+    margin: auto;
+    font-size: 40px;
+    color: #eeeef5;
+  }
+}

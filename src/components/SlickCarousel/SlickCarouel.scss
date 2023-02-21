@@ -1,0 +1,38 @@
+.content-container{
+    width: 100%;
+    padding-top: 80px;
+    border-bottom: 2px solid #ff578a;
+    padding-bottom: 100px;
+    background-color: #282C35;
+    .wrap-content{
+        width: 80%;
+        margin: auto;
+    }
+}
+.slick-carosel-content{
+    h2{
+        color: #eeeef5;
+        margin-bottom: 50px;
+    }
+    .wrap-slick-carosel{
+        padding-right: 20px;
+        h3{
+            color: #eeeef5;
+            margin-top: 10px;
+        }
+        p{
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #df525f;
+        }
+        span{
+    
+            font-size: 20px;
+            
+            color: #eeeef5;
+            ion-icon{
+                color: #df525f;
+            }
+        }
+    }
+}
