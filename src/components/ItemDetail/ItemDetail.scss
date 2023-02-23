@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.item-detail-container {
+  width: 100%;
+  // background-image: url("../assets/home__bg.jpg");
+  background-color: #2d2a32;
+  border-bottom: 2px solid #ff5685;
+  .item-detail {
+    width: 80%;
+    margin: auto;
+    h2 {
+      color: #eeeef5;
+      font-size: 2vw;
+      font-weight: 400;
+      padding-top: 50px;
+    }
+    .item-detail-page-wrap {
+      display: flex;
+      .wrap-item-detail {
+        display: flex;
+        gap: 20px;
+        margin-top: 30px;
+        width: 50%;
+        .left1-item-detail {
+          width: 400%;
+          
+          img {
+            width: 100%;
+         
+          }
+        }
+        .left2-item-detail {
+          ul {
+            display: flex;
+            gap: 20px;
+            padding-left: 0px;
+            margin-bottom: 0px;
+
+            li {
+              list-style: none;
+              color: #eeeef5;
+              font-weight: 400;
+              ion-icon {
+                color: #ff5685;
+                font-size: 1.5vw;
+              }
+            }
+            .li-icon-detail {
+              width: 40px;
+              height: 30px;
+              border: 1px solid #525057;
+              text-align: center;
+              color: #eeeef5;
+              font-weight: 400;
+              border-radius: 5px;
+            }
+          }
+          p {
+            margin-top: 15px;
+            color: #ff5685;
+            font-size: 1.5vw;
+            font-weight: 300;
+            span {
+              color: #eeeef5;
+              font-size: 1.5vw;
+              font-weight: 400;
+            }
+          }
+          .p-detail {
+            color: #eeeef5;
+            font-size: 1.5vw;
+            font-weight: 400;
+          }
+          .p-p-detail{
+            color: #eeeef5;
+            font-size: 1.2vw;
+            font-weight: 400;
+            margin-bottom: 60px;
+          }
+        }
+      }
+      .right-item-detail{
+        width: 50%;
+        .video-detail{
+            width:100%;
+            height: 100%;
+            video{
+                width: 100%;
+                height: 310px;
+            }
+        }
+      }
+    }
+  }
+}

@@ -18,9 +18,10 @@
     }
     .wrap-expected-premiere {
       display: flex;
+      gap: 20px;
       .box-img-expected {
         margin-top: 20px;
-        width: 40%;
+        width: 100%;
         img {
           width: 100%;
           height: 100%;

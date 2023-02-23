@@ -5,16 +5,40 @@ import "./SignUp.scss";
 function Register() {
   const register = (e) => {
     e.preventDefault();
-    console.log(e.target.username.value);
-    axios
-      .post("http://localhost:3000/user", {
-        username: e.target.username.value,
-        email: e.target.email.value,
-        password: e.target.password.value,
-      })
-      .then((axiosDataRegister) => console.log(axiosDataRegister))
-      .catch((error) => console.log(error));
-    window.location.href = "/login";
+    // console.log(e.target.username.value);
+    // axios
+    //   .post("http://localhost:3000/user", {
+    //     username: e.target.username.value,
+    //     email: e.target.email.value,
+    //     password: e.target.password.value,
+    //   })
+    //   .then((axiosDataRegister) => console.log(axiosDataRegister))
+    //   .catch((error) => console.log(error));
+    // window.location.href = "/login";
+
+    let data = {
+      username: e.target.username.value,
+      email: e.target.email.value,
+      password: e.target.password.value,
+    };
+    console.log(data);
+    let userList = [];
+    const getUserStoreage = localStorage.getItem("usersList");
+    if (getUserStoreage) {
+      userList = JSON.parse(localStorage.getItem("usersList"));
+      userList.push(data);
+      localStorage.setItem("usersList", JSON.stringify(userList));
+    } else {
+      userList.push(data);
+      localStorage.setItem("usersList", JSON.stringify(userList));
+    } 
+    //    if () {
+    //     // window.location.href = "/login";
+
+    // } else {
+    //     alert('Đăng ký bạn ơi');
+    // }
+    console.log(userList);
   };
   return (
     <>
@@ -62,7 +86,7 @@ function Register() {
                 </div>
               </form>
               <p>
-                Already have an account? <a href=''>Sign in!</a>
+                Already have an account? <a href='/login'>Sign in!</a>
               </p>
             </div>
           </div>

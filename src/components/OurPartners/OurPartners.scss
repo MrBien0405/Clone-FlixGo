@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.our-parteners-container{
+    width: 100%;
+    background-color: #2B2B31;
+    .wrap-our-parteners{
+        width: 80%;
+        margin: auto;
+        h2{
+            padding-top: 80px;
+            font-size: 2.5vw;
+            font-weight: 400;
+            color: #eeeef5;
+        }
+        p{
+            color: #eeeef5;
+            font-weight: 350;
+            font-size: 1.3vw;
+            padding-top: 30px;
+        }
+        ul{
+            display: flex;
+            margin-bottom: 0px;
+            justify-content: space-between;
+            padding-bottom: 80px;
+
+            li{
+                width: 150px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

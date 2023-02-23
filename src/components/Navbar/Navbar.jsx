@@ -1,15 +1,15 @@
 import React, {useState} from "react";
-import logo from "../../components/assets/screenshot_1676895584.png";
+import logo from "../../components/assets/logo.svg";
 import "./Navbar.scss";
 function Navbar() {
     const [isShrinked, setIsShirinked]=useState(false)
   return (
     <>
       <div className='header'>
-        <div className='header_wrap'>
+        <div className='header-wrap'>
           <div className='left-header'>
             <div className='boximgheader'>
-              <img src={logo} alt='' />
+              <a href="/"><img src={logo} alt='' /></a>
             </div>
           </div>
           <div className={isShrinked ? "nav-center menu-responsive" : "center-header"}>
@@ -41,9 +41,8 @@ function Navbar() {
             <ul>
               <li>
                 <a href=''>
-                  <p>
                     <ion-icon name='search-outline'></ion-icon>
-                  </p>
+                
                 </a>
               </li>
 
@@ -52,7 +51,7 @@ function Navbar() {
               </li>
 
               <li className='li-signin'>
-                <a href=''>SIGN IN</a>
+                <a href='/login'>SIGN IN</a>
               </li>
               <div className='iconmenu' onClick={()=>setIsShirinked(!isShrinked)}>
                 <ion-icon name='menu-outline'></ion-icon>
